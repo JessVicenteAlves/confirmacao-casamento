@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Confirmação — Jéssica & Victor</title>
+<!-- Prévia para compartilhamento no WhatsApp e redes sociais -->
+<meta property="og:title" content="Jéssica & Victor | 14.11.2026">
+<meta property="og:description" content="Nosso grande dia está chegando. 🤍 Encontre seu convite e confirme sua presença para celebrar esse momento conosco.">
+<meta property="og:image" content="https://jessvicentealves.github.io/confirmacao-casamento/previa-whatsapp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://jessvicentealves.github.io/confirmacao-casamento/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jéssica & Victor | 14.11.2026">
+<meta name="twitter:description" content="Nosso grande dia está chegando. 🤍 Encontre seu convite e confirme sua presença para celebrar esse momento conosco.">
+<meta name="twitter:image" content="https://jessvicentealves.github.io/confirmacao-casamento/previa-whatsapp.png">
+
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:#f7f6ef;color:#31583f;font-family:Georgia,"Times New Roman",serif}
+main{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px 14px}
+.card{position:relative;overflow:hidden;width:min(700px,100%);background:#fffdf8;border:1px solid #d9dfd3;border-radius:28px;padding:44px clamp(20px,6vw,56px);box-shadow:0 24px 65px rgba(37,71,50,.13)}
+
+/* Garante o conteúdo acima dos ornamentos */
+.card > *:not(.floral-decor) { position:relative; z-index:2; }
+
+/* Ilustrações florais nos cantos */
+.floral-decor {
+  position:absolute;
+  pointer-events:none;
+  z-index:1;
+  width:clamp(160px, 28vw, 230px);
+  height:auto;
+  opacity:0.95;
+}
+.floral-decor.top-left {
+  top:-10px;
+  left:-10px;
+}
+.floral-decor.bottom-right {
+  bottom:-10px;
+  right:-10px;
+  transform:rotate(180deg);
+}
+
+.orn{font:600 11px Arial,sans-serif;letter-spacing:.28em;text-align:center;color:#b59b68;text-transform:uppercase;margin-bottom:15px}
+h1{text-align:center;font-size:clamp(30px,6vw,43px);font-weight:500;line-height:1.1;margin:0}
+.intro{text-align:center;color:#59655d;font:15px/1.6 Arial,sans-serif;margin:15px auto 30px}
+label{display:block;margin-bottom:9px;font:600 13px Arial,sans-serif}
+.row{display:flex;gap:10px}
+input{flex:1;min-width:0;height:52px;padding:0 16px;border:1px solid #c6d0c3;border-radius:13px;font:16px Arial,sans-serif;outline:none}
+input:focus{border-color:#31583f;box-shadow:0 0 0 3px rgba(49,88,63,.1)}
+button{border:0;border-radius:13px;background:#31583f;color:#fff;min-height:52px;padding:0 22px;font:600 15px Arial,sans-serif;cursor:pointer;transition:background .2s}
+button:hover{background:#254732}
+.hint{text-align:center;color:#7a817c;font:italic 12px Arial,sans-serif;margin:12px 0 0}
+#status{margin-top:28px}
+.title{text-align:center;font:600 14px Arial,sans-serif;margin-bottom:12px}
+.result{background:#fbfcf8;border:1px solid #d9dfd3;border-radius:16px;padding:16px;margin-top:10px}
+.name{font:600 15px/1.35 Arial,sans-serif}
+.sub{color:#66706a;font:12px Arial,sans-serif;margin-top:4px}
+.access{width:100%;margin-top:13px}
+.empty{background:#f6f5ee;border:1px solid #d9dfd3;border-radius:15px;padding:16px;text-align:center;color:#626b65;font:14px/1.5 Arial,sans-serif}
+.footer{text-align:center;color:#8b918c;font:11px Arial,sans-serif;margin-top:30px}
+
+.versiculo {
+  text-align:center;
+  color:#31583f;
+  font-size:17px;
+  line-height:1.45;
+  font-style:italic;
+  margin:0 auto 25px;
+  max-width:500px;
+}
+.versiculo span {
+  display:block;
+  margin-top:5px;
+  font:11px/1.3 Arial,sans-serif;
+  font-style:normal;
+  letter-spacing:.08em;
+  color:#a58d61;
+}
+.contador-wrap {
+  margin:26px auto 24px;
+  padding:18px 12px 16px;
+  border-top:1px solid #e0e4da;
+  border-bottom:1px solid #e0e4da;
+}
+.contador-label {
+  text-align:center;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color:#a58d61;
+  font:600 10px/1 Arial,sans-serif;
+  margin-bottom:12px;
+}
+.contador {
+  display:flex;
+  justify-content:center;
+  gap:clamp(12px,4vw,28px);
+}
+.contador div {
+  min-width:62px;
+  text-align:center;
+}
+.contador strong {
+  display:block;
+  color:#31583f;
+  font:500 clamp(24px,5vw,32px)/1 Georgia,"Times New Roman",serif;
+}
+.contador span {
+  display:block;
+  margin-top:5px;
+  color:#7a817c;
+  font:10px/1 Arial,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+}
+.mensagem {
+  text-align:center;
+  color:#59655d;
+  font:italic 14px/1.6 Georgia,"Times New Roman",serif;
+  max-width:520px;
+  margin:26px auto 28px;
+}
+.prazo {
+  text-align:center;
+  color:#31583f;
+  font:600 13px/1.5 Arial,sans-serif;
+  margin:25px auto 0;
+}
+
+@media(max-width:560px){
+  .row{flex-direction:column}
+  button{width:100%}
+  .card{padding:36px 18px}
+  .floral-decor{width:145px;opacity:0.85}
+}
+</style>
+</head>
+<body>
+<main>
+<section class="card">
+
+  <!-- Ramo Floral Superior Esquerdo com Folhagem Extra -->
+  <svg class="floral-decor top-left" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <!-- Hastes Principais e Secundárias -->
+    <path d="M5 15 C 45 45, 95 65, 195 60" stroke="#718a69" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M15 5 C 45 45, 65 95, 60 195" stroke="#718a69" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M55 42 C 85 40, 135 32, 165 15" stroke="#8ca080" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M42 55 C 40 85, 32 135, 15 165" stroke="#8ca080" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M75 58 C 115 75, 145 105, 160 145" stroke="#9bb090" stroke-width="1.6" stroke-linecap="round"/>
+
+    <!-- Folhagens densas ao longo dos ramos -->
+    <!-- Ramo superior -->
+    <path d="M70 42 C 78 28, 96 26, 104 35 C 96 50, 82 48, 70 42 Z" fill="#8ca080" opacity="0.9"/>
+    <path d="M100 56 C 110 40, 130 38, 140 48 C 130 65, 115 62, 100 56 Z" fill="#91a687" opacity="0.9"/>
+    <path d="M135 60 C 150 48, 170 50, 175 62 C 160 72, 145 68, 135 60 Z" fill="#7a9270" opacity="0.9"/>
+    <path d="M165 58 C 178 46, 195 48, 198 58 C 188 67, 175 65, 165 58 Z" fill="#698260" opacity="0.9"/>
+    <path d="M115 28 C 128 15, 148 20, 150 32 C 136 38, 124 34, 115 28 Z" fill="#a4b89b"/>
+    <path d="M142 16 C 154 6, 168 10, 170 20 C 158 25, 150 22, 142 16 Z" fill="#8ca080"/>
+
+    <!-- Ramo lateral descendo -->
+    <path d="M42 70 C 28 78, 26 96, 35 104 C 50 96, 48 82, 42 70 Z" fill="#8ca080" opacity="0.9"/>
+    <path d="M56 100 C 40 110, 38 130, 48 140 C 65 130, 62 115, 56 100 Z" fill="#91a687" opacity="0.9"/>
+    <path d="M60 135 C 48 150, 50 170, 62 175 C 72 160, 68 145, 60 135 Z" fill="#7a9270" opacity="0.9"/>
+    <path d="M58 165 C 46 178, 48 195, 58 198 C 67 188, 65 175, 58 165 Z" fill="#698260" opacity="0.9"/>
+    <path d="M28 115 C 15 128, 20 148, 32 150 C 38 136, 34 124, 28 115 Z" fill="#a4b89b"/>
+    <path d="M16 142 C 6 154, 10 168, 20 170 C 25 158, 22 150, 16 142 Z" fill="#8ca080"/>
+
+    <!-- Folhas centrais e internas -->
+    <path d="M85 75 C 98 62, 118 68, 122 80 C 108 88, 95 85, 85 75 Z" fill="#a4b89b" opacity="0.85"/>
+    <path d="M75 85 C 62 98, 68 118, 80 122 C 88 108, 85 95, 75 85 Z" fill="#a4b89b" opacity="0.85"/>
+    <path d="M115 95 C 130 85, 148 90, 150 102 C 138 112, 125 108, 115 95 Z" fill="#7a9270" opacity="0.85"/>
+    <path d="M135 125 C 148 115, 165 120, 168 132 C 155 142, 142 138, 135 125 Z" fill="#698260" opacity="0.85"/>
+    <path d="M95 115 C 85 130, 90 148, 102 150 C 112 138, 108 125, 95 115 Z" fill="#7a9270" opacity="0.85"/>
+    <path d="M125 135 C 115 148, 120 165, 132 168 C 142 155, 138 142, 125 135 Z" fill="#698260" opacity="0.85"/>
+
+    <!-- Flor Secundária Superior -->
+    <g transform="translate(130, 22)">
+      <circle cx="0" cy="-11" r="8" fill="#ffffff" stroke="#e3ded2" stroke-width="1" opacity="0.95"/>
+      <circle cx="10" cy="-3" r="8" fill="#ffffff" stroke="#e3ded2" stroke-width="1" opacity="0.95"/>
+      <circle cx="7" cy="9" r="8" fill="#ffffff" stroke="#e3ded2" stroke-width="1" opacity="0.95"/>
+      <circle cx="-7" cy="9" r="8" fill="#ffffff" stroke="#e3ded2" stroke-width="1" opacity="0.95"/>
+      <circle cx="-10" cy="-3" r="8" fill="#ffffff" stroke="#e3ded2" stroke-width="1" opacity="0.95"/>
+      <circle cx="0" cy="0" r="4.5" fill="#d4be88"/>
+    </g>
+
+    <!-- Flor Secundária Lateral -->
+    <g transform="translate(22, 130)">
+      <circle cx="0" cy="-11" r="8" fill="#ffffff" stroke="#e3ded2" stroke-width="1" opacity="0.95"/>
+      <circle cx="10" cy="-3" r="8" fill="#ffffff" stroke="#e3ded2" stroke-width="1" opacity="0.95"/>
+      <circle cx="7" cy="9" r="8" fill="#ffffff" stroke="#e3ded2" stroke-width="1" opacity="0.95"/>
+      <circle cx="-7" cy="9" r="8" fill="#ffffff" stroke="#e3ded2" stroke-width="1" opacity="0.95"/>
+      <circle cx="-10" cy="-3" r="8" fill="#ffffff" stroke="#e3ded2" stroke-width="1" opacity="0.95"/>
+      <circle cx="0" cy="0" r="4.5" fill="#d4be88"/>
+    </g>
+
+    <!-- Flor Principal do Canto -->
+    <g transform="translate(54, 54)">
+      <ellipse cx="0" cy="-19" rx="11" ry="16" fill="#ffffff" stroke="#ded8cb" stroke-width="1"/>
+      <ellipse cx="18" cy="-6" rx="11" ry="16" transform="rotate(72 18 -6)" fill="#ffffff" stroke="#ded8cb" stroke-width="1"/>
+      <ellipse cx="11" cy="16" rx="11" ry="16" transform="rotate(144 11 16)" fill="#ffffff" stroke="#ded8cb" stroke-width="1"/>
+      <ellipse cx="-11" cy="16" rx="11" ry="16" transform="rotate(216 -11 16)" fill="#ffffff" stroke="#ded8cb" stroke-width="1"/>
+      <ellipse cx="-18" cy="-6" rx="11" ry="16" transform="rotate(288 -18 -6)" fill="#ffffff" stroke="#ded8cb" stroke-width="1"/>
+      <circle cx="0" cy="0" r="8.5" fill="#caa862"/>
+      <circle cx="-1.5" cy="-2" r="6" fill="#dfca91" opacity="0.7"/>
+    </g>
+  </svg>
+
+  <!-- Ramo Floral Inferior Direito com Folhagem Extra -->
+  <svg class="floral-decor bottom-right" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M5 15 C 45 45, 95 65, 195 60" stroke="#718a69" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M15 5 C 45 45, 65 95, 60 195" stroke="#718a69" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M55 42 C 85 40, 135 32, 165 15" stroke="#8ca080" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M42 55 C 40 85, 32 135, 15 165" stroke="#8ca080" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M75 58 C 115 75, 145 105, 160 145" stroke="#9bb090" stroke-width="1.6" stroke-linecap="round"/>
+
+    <path d="M70 42 C 78 28, 96 26, 104 35 C 96 50, 82 48, 70 42 Z" fill="#8ca080" opacity="0.9"/>
+    <path d="M100 56 C 110 40, 130 38, 140 48 C 130 65, 115 62, 100 56 Z" fill="#91a687" opacity="0.9"/>
+    <path d="M135 60 C 150 48, 170 50, 175 62 C 160 72, 145 68, 135 60 Z" fill="#7a9270" opacity="0.9"/>
+    <path d="M165 58 C 178 46, 195 48, 198 58 C 188 67, 175 65, 165 58 Z" fill="#698260" opacity="0.9"/>
+    <path d="M115 28 C 128 15, 148 20, 150 32 C 136 38, 124 34, 115 28 Z" fill="#a4b89b"/>
+    <path d="M142 16 C 154 6, 168 10, 170 20 C 158 25, 150 22, 142 16 Z" fill="#8ca080"/>
+
+    <path d="M42 70 C 28 78, 26 96, 35 104 C 50 96, 48 82, 42 70 Z" fill="#8ca080" opacity="0.9"/>
+    <path d="M56 100 C 40 110, 38 130, 48 140 C 65 130, 62 115, 56 100 Z" fill="#91a687" opacity="0.9"/>
+    <path d="M60 135 C 48 150, 50 170, 62 175 C 72 160, 68 145, 60 135 Z" fill="#7a9270" opacity="0.9"/>
+    <path d="M58 165 C 46 178, 48 195, 58 198 C 67 188, 65 175, 58 165 Z" fill="#698260" opacity="0.9"/>
+    <path d="M28 115 C 15 128, 20 148, 32 150 C 38 136, 34 124, 28 115 Z" fill="#a4b89b"/>
+    <path d="M16 142 C 6 154, 10 168, 20 170 C 25 158, 22 150, 16 142 Z" fill="#8ca080"/>
+
+    <path d="M85 75 C 98 62, 118 68, 122 80 C 108 88, 95 85, 85 75 Z" fill="#a4b89b" opacity="0.85"/>
+    <path d="M75 85 C 62 98, 68 118, 80 122 C 88 108, 85 95, 75 85 Z" fill="#a4b89b" opacity="0.85"/>
+    <path d="M115 95 C 130 85, 148 90, 150 102 C 138 112, 125 108, 115 95 Z" fill="#7a9270" opacity="0.85"/>
+    <path d="M135 125 C 148 115, 165 120, 168 132 C 155 142, 142 138, 135 125 Z" fill="#698260" opacity="0.85"/>
+    <path d="M95 115 C 85 130, 90 148, 102 150 C 112 138, 108 125, 95 115 Z" fill="#7a9270" opacity="0.85"/>
+    <path d="M125 135 C 115 148, 120 165, 132 168 C 142 155, 138 142, 125 135 Z" fill="#698260" opacity="0.85"/>
+
+    <g transform="translate(130, 22)">
+      <circle cx="0" cy="-11" r="8" fill="#ffffff" stroke="#e3ded2" stroke-width="1" opacity="0.95"/>
+      <circle cx="10" cy="-3" r="8" fill="#ffffff" stroke="#e3ded2" stroke-width="1" opacity="0.95"/>
+      <circle cx="7" cy="9" r="8" fill="#ffffff" stroke="#e3ded2" stroke-width="1" opacity="0.95"/>
+      <circle cx="-7" cy="9" r="8" fill="#ffffff" stroke="#e3ded2" stroke-width="1" opacity="0.95"/>
+      <circle cx="-10" cy="-3" r="8" fill="#ffffff" stroke="#e3ded2" stroke-width="1" opacity="0.95"/>
+      <circle cx="0" cy="0" r="4.5" fill="#d4be88"/>
+    </g>
+
+    <g transform="translate(22, 130)">
+      <circle cx="0" cy="-11" r="8" fill="#ffffff" stroke="#e3ded2" stroke-width="1" opacity="0.95"/>
+      <circle cx="10" cy="-3" r="8" fill="#ffffff" stroke="#e3ded2" stroke-width="1" opacity="0.95"/>
+      <circle cx="7" cy="9" r="8" fill="#ffffff" stroke="#e3ded2" stroke-width="1" opacity="0.95"/>
+      <circle cx="-7" cy="9" r="8" fill="#ffffff" stroke="#e3ded2" stroke-width="1" opacity="0.95"/>
+      <circle cx="-10" cy="-3" r="8" fill="#ffffff" stroke="#e3ded2" stroke-width="1" opacity="0.95"/>
+      <circle cx="0" cy="0" r="4.5" fill="#d4be88"/>
+    </g>
+
+    <g transform="translate(54, 54)">
+      <ellipse cx="0" cy="-19" rx="11" ry="16" fill="#ffffff" stroke="#ded8cb" stroke-width="1"/>
+      <ellipse cx="18" cy="-6" rx="11" ry="16" transform="rotate(72 18 -6)" fill="#ffffff" stroke="#ded8cb" stroke-width="1"/>
+      <ellipse cx="11" cy="16" rx="11" ry="16" transform="rotate(144 11 16)" fill="#ffffff" stroke="#ded8cb" stroke-width="1"/>
+      <ellipse cx="-11" cy="16" rx="11" ry="16" transform="rotate(216 -11 16)" fill="#ffffff" stroke="#ded8cb" stroke-width="1"/>
+      <ellipse cx="-18" cy="-6" rx="11" ry="16" transform="rotate(288 -18 -6)" fill="#ffffff" stroke="#ded8cb" stroke-width="1"/>
+      <circle cx="0" cy="0" r="8.5" fill="#caa862"/>
+      <circle cx="-1.5" cy="-2" r="6" fill="#dfca91" opacity="0.7"/>
+    </g>
+  </svg>
+
+  <div class="versiculo">“Até aqui nos ajudou o Senhor.”<span>1 Samuel 7:12</span></div>
+  <div class="orn">Com carinho</div>
+  <h1>Seu convite espera por você</h1>
+  <p class="intro">Digite seu nome para encontrar o convite preparado para este momento tão especial.</p>
+  
+  <div class="contador-wrap">
+    <div class="contador-label">Prazo para confirmação</div>
+    <div class="contador" id="contador" aria-live="polite">
+      <div><strong id="dias">00</strong><span>dias</span></div>
+      <div><strong id="horas">00</strong><span>horas</span></div>
+      <div><strong id="minutos">00</strong><span>minutos</span></div>
+      <div><strong id="segundos">00</strong><span>segundos</span></div>
+    </div>
+  </div>
+
+  <p class="mensagem">Será uma alegria ter você conosco nesse dia tão especial.</p>
+  <label for="nome">Nome do convidado</label>
+  <div class="row">
+    <input id="nome" type="search" placeholder="Digite seu nome aqui" autocomplete="off">
+    <button id="buscar">Buscar convite</button>
+  </div>
+  <p class="hint">Você pode buscar pelo primeiro nome, sobrenome ou nome completo.</p>
+  <div id="status" aria-live="polite"></div>
+  <p class="prazo">Confirme sua presença até <strong>10/10/2026 às 23h59.</strong></p>
+  <div class="footer">Jéssica & Victor · 14 de novembro de 2026</div>
+
+</section>
+</main>
+
+<script>
+const convites=[{"responsavel": "Zélia Galdino", "nomes": ["Zélia Galdino"], "codigo": "CAS-9ZE3AP", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-9ZE3AP"}, {"responsavel": "Elaine Fernandes", "nomes": ["Elaine Fernandes", "José Augusto Fernandes", "Maria dos Santos"], "codigo": "CAS-38WCLG", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-38WCLG"}, {"responsavel": "Victor da Silva", "nomes": ["Victor da Silva", "Jéssica Vicente"], "codigo": "CAS-LVA7PE", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-LVA7PE"}, {"responsavel": "Angelina Galdino", "nomes": ["Angelina Galdino"], "codigo": "CAS-AFHQXU", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-AFHQXU"}, {"responsavel": "Alexandre Fernandes", "nomes": ["Alexandre Fernandes", "Márcia Fernandes"], "codigo": "CAS-4YM7YB", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-4YM7YB"}, {"responsavel": "Andréia da Silva", "nomes": ["Andréia da Silva", "Benancy da Silva", "Danielly da Silva", "Danyllo de Santana", "Isabelly da Silva"], "codigo": "CAS-36GCMH", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-36GCMH"}, {"responsavel": "Allessandro Sobrinho", "nomes": ["Allessandro Sobrinho", "Vanderleia Coelho", "Vitória"], "codigo": "CAS-878H59", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-878H59"}, {"responsavel": "João Maurício Araújo", "nomes": ["João Maurício Araújo", "Ana Luísa Gomes"], "codigo": "CAS-SQ3EQB", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-SQ3EQB"}, {"responsavel": "Keli Albino", "nomes": ["Keli Albino", "Gilcimar Silva"], "codigo": "CAS-4Q3WPP", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-4Q3WPP"}, {"responsavel": "Edilza Franco", "nomes": ["Edilza Franco", "Daniel Santana", "Gustavo Franco", "Hugo Franco"], "codigo": "CAS-VP43WD", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-VP43WD"}, {"responsavel": "Kauã Izidoro", "nomes": ["Kauã Izidoro"], "codigo": "CAS-LE4ZCK", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-LE4ZCK"}, {"responsavel": "Mariene Gomes", "nomes": ["Mariene Gomes", "Lenon Falcão"], "codigo": "CAS-2RUX2Z", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-2RUX2Z"}, {"responsavel": "Mariana Mendes", "nomes": ["Mariana Mendes", "Benício Pereira", "Daniel Pereira", "Manuela Pereira"], "codigo": "CAS-RHKUKX", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-RHKUKX"}, {"responsavel": "Lucas Araújo", "nomes": ["Lucas Araújo"], "codigo": "CAS-9L6U8H", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-9L6U8H"}, {"responsavel": "Thiago Lino", "nomes": ["Thiago Lino"], "codigo": "CAS-U9AX6Z", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-U9AX6Z"}, {"responsavel": "Pedro André", "nomes": ["Pedro André", "Júlia Laura dos Santos"], "codigo": "CAS-5MTMGW", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-5MTMGW"}, {"responsavel": "Leonardo Aguiar", "nomes": ["Leonardo Aguiar", "Levi Aguiar", "Marcela Pimentel"], "codigo": "CAS-8NGBA2", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-8NGBA2"}, {"responsavel": "Joana Vasconcelos", "nomes": ["Joana Vasconcelos", "Arthur Klinger Vasconcelos", "Klinger Guimarães", "Pollyana Vasconcelos"], "codigo": "CAS-CSJ5BZ", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-CSJ5BZ"}, {"responsavel": "Erika Maria Bernardo", "nomes": ["Erika Maria Bernardo", "Maria Júlia Bernardo"], "codigo": "CAS-KBPY3M", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-KBPY3M"}, {"responsavel": "Danielle Gomes", "nomes": ["Danielle Gomes", "Laryssa Simões", "Letycia Simões", "Vitorio Simões"], "codigo": "CAS-B8MLXG", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-B8MLXG"}, {"responsavel": "Jaqueline Mendes", "nomes": ["Jaqueline Mendes", "Ana Clara Barroso", "Cecília Barroso", "Laura Barroso"], "codigo": "CAS-MQVH6Z", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-MQVH6Z"}, {"responsavel": "Isabelle Ribeiro", "nomes": ["Isabelle Ribeiro", "Matheus Nogueira"], "codigo": "CAS-XZLC9W", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-XZLC9W"}, {"responsavel": "Letícia Ribeiro", "nomes": ["Letícia Ribeiro", "Caio de Andrade"], "codigo": "CAS-UZDAHH", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-UZDAHH"}, {"responsavel": "Vitória Leal", "nomes": ["Vitória Leal", "Alexsandro Aguiar"], "codigo": "CAS-L7BZ7T", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-L7BZ7T"}, {"responsavel": "Aldair Aguiar", "nomes": ["Aldair Aguiar", "Nelma Maria da Silva", "Priscila Alves", "Raphael Aguiar"], "codigo": "CAS-UQA9VF", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-UQA9VF"}, {"responsavel": "Pedro Brito", "nomes": ["Pedro Brito"], "codigo": "CAS-BQVQWL", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-BQVQWL"}, {"responsavel": "Raquel Oliveira", "nomes": ["Raquel Oliveira", "Bernardo Patrocínio", "Thiago Patrocínio"], "codigo": "CAS-YL5P5S", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-YL5P5S"}, {"responsavel": "Marcelo Souza", "nomes": ["Marcelo Souza", "João", "Marcelo Júnior", "Micaela", "Shirleila Vieira"], "codigo": "CAS-BRVUTZ", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-BRVUTZ"}, {"responsavel": "Roosevelt Machado", "nomes": ["Roosevelt Machado", "Lucas Machado", "Rosana Amorim"], "codigo": "CAS-F5MGYY", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-F5MGYY"}, {"responsavel": "Allan Allen", "nomes": ["Allan Allen", "Oneide Cristina Dias"], "codigo": "CAS-UA7TPT", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-UA7TPT"}, {"responsavel": "Pedro Sousa", "nomes": ["Pedro Sousa", "Esther Maurício"], "codigo": "CAS-N7V65P", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-N7V65P"}, {"responsavel": "Vanessa Fernandes", "nomes": ["Vanessa Fernandes", "Arthur Miguel Reis"], "codigo": "CAS-RR7EAE", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-RR7EAE"}, {"responsavel": "Rayla Russo", "nomes": ["Rayla Russo"], "codigo": "CAS-JU3FEX", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-JU3FEX"}, {"responsavel": "Bruna Praun", "nomes": ["Bruna Praun"], "codigo": "CAS-92VDVD", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-92VDVD"}, {"responsavel": "Lara Paulino", "nomes": ["Lara Paulino", "Paulo Cesar"], "codigo": "CAS-6BFGCH", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-6BFGCH"}, {"responsavel": "Karol Paulino", "nomes": ["Karol Paulino", "Henrique Gomes", "Isis Paulino", "Pedro Henrique Paulino"], "codigo": "CAS-XL7HR2", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-XL7HR2"}, {"responsavel": "Heloísa Vicente", "nomes": ["Heloísa Vicente", "Sueli Garcia", "Wellington Garcia"], "codigo": "CAS-H3HBHL", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-H3HBHL"}, {"responsavel": "Lúcia Regina Vicente", "nomes": ["Lúcia Regina Vicente", "Larissa Vicente"], "codigo": "CAS-GNLEYZ", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-GNLEYZ"}, {"responsavel": "Rita de Cássia Vicente", "nomes": ["Rita de Cássia Vicente", "Deleir dos Santos Alves"], "codigo": "CAS-2S832E", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-2S832E"}, {"responsavel": "Laís Vicente", "nomes": ["Laís Vicente", "Bruno Gomes"], "codigo": "CAS-HXJJF5", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-HXJJF5"}, {"responsavel": "Victória Ribeiro", "nomes": ["Victória Ribeiro", "Jefferson Lopes"], "codigo": "CAS-D9XSGF", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-D9XSGF"}, {"responsavel": "Ellen Rodrigues", "nomes": ["Ellen Rodrigues", "Leonardo Ribeiro"], "codigo": "CAS-RANTKK", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-RANTKK"}, {"responsavel": "Luciana Fernandes", "nomes": ["Luciana Fernandes", "Raimundo Galdino"], "codigo": "CAS-6T7KHV", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-6T7KHV"}, {"responsavel": "Andressa Marcelly Souza", "nomes": ["Andressa Marcelly Souza", "Helena Ribeiro", "Willian Ribeiro"], "codigo": "CAS-6N35PK", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-6N35PK"}, {"responsavel": "Ana Paula Ribeiro", "nomes": ["Ana Paula Ribeiro", "Anderson Silva", "Aurora Silva"], "codigo": "CAS-E96R3T", "url": "https://convites-online.com/invite/cmrcmt9z90003js04ca5nvl8b/CAS-E96R3T"}];
+
+function norm(s){return s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim()}
+
+function buscar(){
+  const t=norm(document.getElementById("nome").value),st=document.getElementById("status");
+  if(!t){st.innerHTML='<div class="empty">Digite seu nome para encontrar seu convite. 🤍</div>';return}
+  const r=convites.filter(c=>c.nomes.some(n=>norm(n).includes(t)));
+  if(!r.length){st.innerHTML='<div class="empty"><strong>Não encontramos seu convite.</strong><br>Confira a grafia do nome e tente novamente.</div>';return}
+  let h='<div class="title">'+(r.length===1?"Encontramos seu convite!":"Encontramos "+r.length+" convites para esta busca.")+'</div>';
+  r.forEach(c=>{h+='<div class="result"><div class="name">Convite de '+c.responsavel+'</div><div class="sub">Código: '+c.codigo+'</div><button class="access" onclick="location.href=\''+c.url+'\'">Acessar meu convite</button></div>'});
+  st.innerHTML=h
+}
+
+const dataConfirmacao = new Date("2026-10-10T23:59:59");
+
+function atualizarContador() {
+  const agora = new Date();
+  const diferenca = dataConfirmacao - agora;
+
+  if (diferenca <= 0) {
+    document.getElementById("contador").innerHTML =
+      '<div style="width:100%;text-align:center;font:600 16px Arial,sans-serif;color:#31583f">Prazo de confirmação encerrado. 🤍</div>';
+    return;
+  }
+
+  const totalSegundos = Math.floor(diferenca / 1000);
+  const dias = Math.floor(totalSegundos / 86400);
+  const horas = Math.floor((totalSegundos % 86400) / 3600);
+  const minutos = Math.floor((totalSegundos % 3600) / 60);
+  const segundos = totalSegundos % 60;
+
+  document.getElementById("dias").textContent = String(dias).padStart(2, "0");
+  document.getElementById("horas").textContent = String(horas).padStart(2, "0");
+  document.getElementById("minutos").textContent = String(minutos).padStart(2, "0");
+  document.getElementById("segundos").textContent = String(segundos).padStart(2, "0");
+}
+
+atualizarContador();
+setInterval(atualizarContador, 1000);
+
+document.getElementById("buscar").onclick=buscar;
+document.getElementById("nome").onkeydown=e=>{if(e.key==="Enter")buscar()};
+</script>
+</body>
+</html>
